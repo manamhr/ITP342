@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="BradleyHand-Bold.ttf">
+            <string>BradleyHandITCTT-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mana Mehraein" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="eu5-Zm-vZc" userLabel="Top Text">
+                                <rect key="frame" x="56.5" y="28" width="207" height="38"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mana" translatesAutoresizingMaskIntoConstraints="NO" id="uSq-dM-4jG">
+                                <rect key="frame" x="-319" y="66" width="958" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="uSq-dM-4jG" secondAttribute="height" multiplier="1272:239" id="0fx-oH-A9d"/>
+                                    <constraint firstAttribute="height" constant="180" id="X9x-Wx-dnJ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Ctr-f7-1dE" userLabel="Bottom Text">
+                                <rect key="frame" x="20" y="431" width="280" height="122"/>
+                                <string key="text">Hi This is Mana Mehraein. I am Biomedical Engineering (Electrical) major and since I love coding and programming, I decided to do a certificate in Computer Programming as well.</string>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.85646796226501465" green="0.48954331874847412" blue="0.23129099607467651" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="eu5-Zm-vZc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Wk-5Q-5s9"/>
+                            <constraint firstItem="Ctr-f7-1dE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ELJ-Hw-S4v"/>
+                            <constraint firstItem="uSq-dM-4jG" firstAttribute="top" secondItem="eu5-Zm-vZc" secondAttribute="bottom" id="EhS-hc-xaM"/>
+                            <constraint firstAttribute="trailing" secondItem="Ctr-f7-1dE" secondAttribute="trailing" constant="20" id="Fv6-CA-UsV"/>
+                            <constraint firstItem="Ctr-f7-1dE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Obq-dT-ahj"/>
+                            <constraint firstItem="uSq-dM-4jG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pi7-6k-xzp"/>
+                            <constraint firstItem="eu5-Zm-vZc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="hiQ-eo-7IG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ctr-f7-1dE" secondAttribute="bottom" constant="15" id="oes-wU-zRz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="130.88455772113943"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mana" width="1272" height="1272"/>
+    </resources>
+</document>
