@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Helvetica.ttc">
+            <string>Helvetica-Bold</string>
+        </array>
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWW-nA-Ibr" userLabel="BackgroundButton">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <connections>
+                                    <action selector="KeyboardDone:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="43W-uz-YTZ"/>
+                                    <action selector="KeyboardDone:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h4S-fR-z14"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose one!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LC7-15-PNx" userLabel="TopLabel">
+                                <rect key="frame" x="16" y="20" width="343" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="wSQ-Oh-Hqe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="riL-ln-RUG" userLabel="TF">
+                                <rect key="frame" x="16" y="53" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Gol-aX-zmx"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJh-g4-ScG" userLabel="DoodleButton">
+                                <rect key="frame" x="112" y="114" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="DuY-tD-eij"/>
+                                    <constraint firstAttribute="height" constant="150" id="MrV-9h-ffZ"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="doodle"/>
+                                <connections>
+                                    <action selector="DoodleButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Io1-Zj-xRF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lm9-AN-q0A" userLabel="FBulldogButton">
+                                <rect key="frame" x="112" y="293" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="fDC-EU-Ycn"/>
+                                    <constraint firstAttribute="height" constant="150" id="nAV-6B-bik"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="bulldog"/>
+                                <connections>
+                                    <action selector="FBulldogButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kGb-TH-PPc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbw-XZ-bxN" userLabel="ResetBtn">
+                                <rect key="frame" x="16" y="545" width="343" height="112"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="ResetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1JA-TS-q1B"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ckz-H2-7zm" userLabel="Text">
+                                <rect key="frame" x="16" y="463" width="343" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="wYd-d5-iHP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.61104358400000003" green="0.84912765960000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Ckz-H2-7zm" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="1Ka-3e-jPI"/>
+                            <constraint firstItem="eJh-g4-ScG" firstAttribute="top" secondItem="riL-ln-RUG" secondAttribute="bottom" constant="31" id="4U3-8f-eRx"/>
+                            <constraint firstItem="riL-ln-RUG" firstAttribute="leading" secondItem="LC7-15-PNx" secondAttribute="leading" id="6go-6C-ezG"/>
+                            <constraint firstItem="riL-ln-RUG" firstAttribute="top" secondItem="LC7-15-PNx" secondAttribute="bottom" constant="8" id="8q9-ND-wkJ"/>
+                            <constraint firstItem="Ckz-H2-7zm" firstAttribute="top" secondItem="Lm9-AN-q0A" secondAttribute="bottom" constant="20" id="GEd-oR-8Jd"/>
+                            <constraint firstItem="fbw-XZ-bxN" firstAttribute="trailing" secondItem="Ckz-H2-7zm" secondAttribute="trailing" id="Hxe-F8-4mH"/>
+                            <constraint firstItem="riL-ln-RUG" firstAttribute="trailing" secondItem="LC7-15-PNx" secondAttribute="trailing" id="J3q-gH-ocT"/>
+                            <constraint firstItem="fbw-XZ-bxN" firstAttribute="leading" secondItem="Ckz-H2-7zm" secondAttribute="leading" id="KGI-Wk-FDi"/>
+                            <constraint firstItem="LC7-15-PNx" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Pjz-u2-pzw"/>
+                            <constraint firstItem="LC7-15-PNx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="R3X-Ec-0Nr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fbw-XZ-bxN" secondAttribute="bottom" constant="10" id="Xa7-J3-8be"/>
+                            <constraint firstItem="CWW-nA-Ibr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bbt-VN-obi"/>
+                            <constraint firstItem="LC7-15-PNx" firstAttribute="centerX" secondItem="CWW-nA-Ibr" secondAttribute="centerX" id="ea0-sJ-1El"/>
+                            <constraint firstItem="fbw-XZ-bxN" firstAttribute="top" secondItem="Ckz-H2-7zm" secondAttribute="bottom" constant="24" id="gMC-8q-tAs"/>
+                            <constraint firstItem="Lm9-AN-q0A" firstAttribute="centerX" secondItem="eJh-g4-ScG" secondAttribute="centerX" id="gYa-kZ-rAm"/>
+                            <constraint firstItem="CWW-nA-Ibr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="grL-rt-QHF"/>
+                            <constraint firstItem="Lm9-AN-q0A" firstAttribute="top" secondItem="eJh-g4-ScG" secondAttribute="bottom" constant="29" id="j45-59-3DE"/>
+                            <constraint firstItem="eJh-g4-ScG" firstAttribute="centerX" secondItem="riL-ln-RUG" secondAttribute="centerX" id="ohz-O4-JGv"/>
+                            <constraint firstItem="riL-ln-RUG" firstAttribute="top" secondItem="LC7-15-PNx" secondAttribute="bottom" constant="8" id="prk-vy-WVV"/>
+                            <constraint firstItem="Ckz-H2-7zm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="rBX-yr-b2V"/>
+                            <constraint firstItem="CWW-nA-Ibr" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="sec-Z7-NRc"/>
+                            <constraint firstItem="LC7-15-PNx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="wxU-9R-oX5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="messageLabel" destination="Ckz-H2-7zm" id="a63-Qi-cfe"/>
+                        <outlet property="nameTextFrield" destination="riL-ln-RUG" id="KcE-vh-pnw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bulldog" width="250" height="250"/>
+        <image name="doodle" width="250" height="250"/>
+    </resources>
+</document>
